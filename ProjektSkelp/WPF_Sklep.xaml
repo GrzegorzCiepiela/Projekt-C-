@@ -1,0 +1,33 @@
+﻿<Window x:Class="ProjektSkelp.WPF_Sklep"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektSkelp"
+        mc:Ignorable="d"
+        Title="WPF_Sklep" Height="450" Width="721.311">
+    <Grid Margin="0,0,2,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="4-najzdrowsze-owoce-na-swiecie-jak-dzialaja-na-organizm_article.jpg"/>
+        </Grid.Background>
+        <DataGrid x:Name="gridOwoce" HorizontalAlignment="Left" Height="154" Margin="442,112,0,0" VerticalAlignment="Top" Width="259" SelectionChanged="gridOwoce_SelectionChanged" BorderBrush="#FF0DE3EE" Foreground="Black" Background="White"/>
+        <Label Content="Nazwa Owocu:" HorizontalAlignment="Left" Height="25" Margin="16,254,0,0" VerticalAlignment="Top" Width="106" FontSize="16" FontFamily="Calibri" FontWeight="Bold"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="25" Margin="144,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" FontSize="16" FontFamily="Calibri"/>
+        <Label Content="Kraj Pochodzenia:" HorizontalAlignment="Left" Height="25" Margin="16,294,0,0" VerticalAlignment="Top" Width="128" FontSize="16" FontFamily="Calibri" FontWeight="Bold"/>
+        <TextBox x:Name="txtName_Kraj" HorizontalAlignment="Left" Height="25" Margin="144,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" FontSize="16" FontFamily="Calibri"/>
+        <Label Content="Cena:" HorizontalAlignment="Left" Height="25" Margin="16,334,0,0" VerticalAlignment="Top" Width="48" FontSize="16" FontFamily="Calibri" FontWeight="Bold"/>
+        <TextBox x:Name="txtName_Cena" HorizontalAlignment="Left" Height="25" Margin="144,334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" FontSize="16" FontFamily="Calibri"/>
+        <Button x:Name="btDodaj" Content="Dodaj Owoc" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131" Margin="144,374,0,0" FontSize="16" FontFamily="Calibri" Click="btDodaj_Click"/>
+        <Button x:Name="btLoadOwoce" Content="Wczytaj Dane" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Margin="442,277,0,0" FontSize="16" FontFamily="Calibri" Click="btLoadOwoce_Click"/>
+        <Button x:Name="btUpdateOwoce" Content="Zapisz Owoce" VerticalAlignment="Top" Margin="144,152,436,0" FontSize="16" FontFamily="Calibri" Click="btUpdateOwoce_Click"/>
+        <Label Content="Nazwa Owocu:" HorizontalAlignment="Left" Height="25" Margin="11,32,0,0" VerticalAlignment="Top" Width="106" FontSize="16" FontFamily="Calibri" BorderBrush="Black" FontWeight="Bold" Foreground="Black" Background="{x:Null}"/>
+        <TextBox x:Name="txtName_2" HorizontalAlignment="Left" Height="25" Margin="144,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" FontSize="16" FontFamily="Calibri"/>
+        <Label Content="Kraj Pochodzenia:" HorizontalAlignment="Left" Height="25" Margin="11,72,0,0" VerticalAlignment="Top" Width="128" FontSize="16" FontFamily="Calibri" FontWeight="Bold" Foreground="Black" Background="{x:Null}"/>
+        <TextBox x:Name="txtName_Kraj_2" HorizontalAlignment="Left" Height="25" Margin="144,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" FontSize="16" FontFamily="Calibri"/>
+        <Label Content="Cena:" HorizontalAlignment="Left" Height="25" Margin="11,112,0,0" VerticalAlignment="Top" Width="48" FontSize="16" FontFamily="Calibri" FontWeight="Bold" Foreground="Black" Background="{x:Null}"/>
+        <TextBox x:Name="txtName_Cena_2" HorizontalAlignment="Left" Height="25" Margin="144,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="131" FontSize="16" FontFamily="Calibri" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="btDeleteOwoce" Content="Usuń Pozycję" VerticalAlignment="Top" Margin="592,277,10,0" FontSize="16" FontFamily="Calibri" Click="btDeleteOwoce_Click"/>
+        <Label Content="Modyfikuj owoce w bazie danych" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="233" FontSize="16" FontFamily="Calibri" BorderBrush="Black" FontWeight="Bold" Foreground="Black" Background="{x:Null}" Margin="27,0,0,0"/>
+        <Label Content="Dodaj nowe owoce" HorizontalAlignment="Left" Height="27" Margin="62,222,0,0" VerticalAlignment="Top" Width="168" FontSize="16" FontFamily="Calibri" BorderBrush="Black" FontWeight="Bold" Foreground="Black" Background="{x:Null}"/>
+    </Grid>
+</Window>
